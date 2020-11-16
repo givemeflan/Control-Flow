@@ -55,9 +55,18 @@ public class AsciiChars {
 
     }
 
-    // Here we are declaring a method, convertAnswers. This method will be used to
-    // store the user's answers into this array here.
+    // Here we are declaring a method, convertAnswers. This method takes the array
+    // passed to it and organizes the answers so that it can be logged in the
+    // console.
     public static void convertAnswers(String[] userAnswers) {
+        int pet = userAnswers[1].charAt(2);
+        int luckyNum = Integer.parseInt(userAnswers[3]);
+        int auto = Integer.parseInt(userAnswers[5]);
+        int firstAct = userAnswers[6].charAt(0);
+        int lastAct = userAnswers[6].charAt(userAnswers[5].length() - 1);
+        int num = 42;
+        int quarterBack = Integer.parseInt(userAnswers[4]);
+        int petAge = Integer.parseInt(userAnswers[2]);
 
     }
 
