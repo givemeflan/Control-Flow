@@ -37,12 +37,27 @@ public class AsciiChars {
                 "What is the first name of their favorite actor or actress?",
                 "Enter a random number between 1 and 50" };
 
+        // This array will hold answers from the user after the questions have been
+        // asked.
+        String[] answers = new String[questions.length];
+
         for (int i = 0; i < questions.length; i++) {
             Scanner scan = new Scanner(System.in);
             System.out.println(questions[i]);
             String userAnswer = scan.nextLine();
-            System.out.println(userAnswer);
+            answers[i] = userAnswer;
+            // this last line of code here with answers[i] = userAnswer;, we are storing the
+            // user's answers into this new array called answers.
         }
+
+        // Calling the convertAnsers method here
+        convertAnswers(answers);
+
+    }
+
+    // Here we are declaring a method, convertAnswers. This method will be used to
+    // store the user's answers into this array here.
+    public static void convertAnswers(String[] userAnswers) {
 
     }
 
