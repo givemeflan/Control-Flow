@@ -67,8 +67,32 @@ public class AsciiChars {
         int num = 42;
         int quarterBack = Integer.parseInt(userAnswers[4]);
         int petAge = Integer.parseInt(userAnswers[2]);
+        System.out.println(pet);
+        System.out.println(auto + luckyNum);
+        System.out.println(firstAct);
+        System.out.println(lastAct);
+        System.out.println(petAge + auto);
+        System.out.println(quarterBack + petAge + luckyNum);
 
     }
+
+    public static void runScan()
+    {
+        String[] questions ={"Is your car red?", "what is the name of your favorite pet?",
+                "Ask the user for the age of their favorite pet.","What is your lucky number?",
+                "What is your favorite quarterbaks jersy number?","what is the two digit model year of your car?",
+                "What is the first name of your favorite actress or actor?"};
+        String[] answers = new String[questions.length];
+        System.out.println("beep beep boop scan is running");
+                System.out.println("....");
+                System.out.println("I am going to ask you some questions, please answer them as best you can!");
+                for(int i = 0;i<questions.length;i++){
+                    Scanner scanner = new Scanner(System.in);
+                    System.out.print(questions[i]);
+                    String someString = scanner.next();
+                    answers[i]=someString;
+                }
+                convertAnswers(answers);
 
     public static void main(String[] args) {
 
